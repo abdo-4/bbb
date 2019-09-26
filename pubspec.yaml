@@ -1,0 +1,243 @@
+name: bus_tracker
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: 0.1.2
+  font_awesome_flutter: 8.4.0
+  google_maps_flutter: 
+    path: ./LibRef/google_maps_flutter-0.5.19+2
+    
+  http: 0.11.3+17
+  shared_preferences: 0.4.1
+  image_picker: 0.6.0+8 #0.4.6
+    #path: ./LibRef/image_picker-0.6.0+1
+  #cached_network_image: 0.7.0
+  datetime_picker_formfield: 0.1.8
+  date_range_picker: 1.0.6
+  path_provider: 1.1.0
+  #camera: 0.4.2
+  url_launcher: 4.2.0+3
+  flutter_socket_io:
+    path: ./LibRef/flutter_socket_io-0.5.1  
+  geolocator: #5.1.2
+    path: ./LibRef/geolocator-5.1.1
+  scoped_model: 1.0.1 #0.3.0
+  #flutter_webview_plugin:
+  #  path: ../
+  webview_flutter: 0.3.13
+    #path: ./LibRef/webview_flutter-0.3.10+3
+  #flutter_launcher_icons: #0.7.0
+    #path: ./LibRef/flutter_launcher_icons-0.7.2+1
+  #for lutter-Arabic-RTL-Internationalization-master:
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.15.8
+  intl_translation: 0.17.5
+  #cupertino_icons: 0.1.2
+  #scoped_model: 0.3.0
+  date_format: 1.0.6
+  # for conectivity:
+  connectivity: 0.3.2
+  provider: 3.0.0 #2.0.1  
+
+  rflutter_alert: 1.0.3
+  
+  #android_alarm_manager:
+   # path: ./LibRef/android_alarm_manager-0.4.1+6
+
+  location: 2.3.5
+  #map_view: "0.0.14" # need kotlin.
+  google_maps_webservice: 0.0.6
+
+  flutter_local_notifications: 0.8.0
+  #image_picker:
+
+  #image_picker: "0.4.5"
+  #path_provider: "0.4.1"
+  image: 2.0.4
+
+  flutter_rating_bar:
+    path: ./LibRef/flutter_rating_bar
+
+
+dev_dependencies:
+  #flutter_test:
+    #sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets: 
+     - lib/app/assets/logo.png
+     - lib/app/assets/logo2.png
+     - lib/app/assets/logo150x150.png
+     - lib/app/assets/img_not_available.jpeg
+     - lib/app/assets/place_user.png
+     - lib/app/assets/placeholder.png
+     - lib/app/assets/placeholderCenter.png 
+     - lib/app/assets/school-bus-transportation-powerpoint-backgrounds.jpg
+     - lib/app/assets/DARLogo.jpg
+     - lib/app/assets/Map/see_on_map_btn.png
+     - lib/app/assets/Map/tip_tool_icon_map.png
+     - lib/app/assets/Map/pin_yellow.png 
+     - lib/app/assets/bus/school-bus-icon-9.png
+     - lib/app/assets/bus/school-bus-icon-9_36x36.png
+     - lib/app/assets/Student/student_menu_icon32x32.png
+     - lib/app/assets/Student/student_menu_icon96x96.png
+     - lib/app/assets/Student/At bus pink.png
+     - lib/app/assets/Student/leave bus pink.png
+     - lib/app/assets/Student/At bus y.png
+     - lib/app/assets/Student/leave bus y.png
+     - lib/app/assets/Student/student128x128.png
+     - lib/app/assets/Student/students_male.png
+     - lib/app/assets/Student/students_female.png
+     - lib/app/assets/Notification/notification_fill.png
+     - lib/app/assets/Notification/notification_fill_red.png
+     - lib/app/assets/Compliant/Compliant.png
+     - lib/app/assets/Schedule/Shedule48x48.png
+     - lib/app/assets/School/school_icon34x53_yallow.png 
+     - lib/app/assets/School/school_icon34x53_pink.png
+     - lib/app/assets/School/home_icon34x53 green.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_128x.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_96x.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_64x.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_48x.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_32x.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_128x_red.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_96x_red.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_64x_red.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_48x_red.png
+     - lib/app/assets/checkbox/abc_btn_check_to_on_mtrl_015_32x_red.png
+     - lib/app/assets/images/
+     - lib/app/assets/json/
+     - lib/app/assets/videos/
+     - lib/app/assets/files/
+
+  fonts:
+      - family: Merriweather
+        fonts:
+          - asset: lib/app/fonts/Merriweather.ttf
+      - family: Roboto
+        fonts:
+          - asset: lib/app/fonts/Roboto.ttf
+      - family: ASansrounded  # arabic good one
+        fonts:
+          - asset: lib/app/fonts/ASansrounded.ttf
+      - family: AwanZaman-Regular # arabic small size
+        fonts:
+          - asset: lib/app/fonts/AwanZaman-Regular.ttf
+      - family: BigVesta-Arabic-Regular # arabic good one
+        fonts:
+          - asset: lib/app/fonts/BigVesta-Arabic-Regular.ttf
+      - family: BoutrosNewsH1_Bold  # arabic bold
+        fonts:
+          - asset: fonts/BoutrosNewsH1-Bold.ttf
+      - family: DroidSansArabic # arabic normal
+        fonts:
+          - asset: lib/app/fonts/DroidSansArabic.ttf
+      - family: eacologica-round-slab-ffp
+        fonts:
+          - asset: lib/app/fonts/eacologica-round-slab-ffp.ttf
+      - family: Fabada-regular  # arabic normal
+        fonts:
+          - asset: lib/app/fonts/Fabada-regular.ttf
+      - family: Greta-Arabic-Regular  # arabic normal
+        fonts:
+          - asset: lib/app/fonts/Greta-Arabic-Regular.ttf
+      - family: Instruction # arabic normal
+        fonts:
+          - asset: lib/app/fonts/Instruction.ttf
+      - family: Kingthings_Clarity1.1 # arabic normal
+        fonts:
+          - asset: lib/app/fonts/Kingthings_Clarity1.1.ttf    
+      - family: Nunito-Regular
+        fonts:
+          - asset: lib/app/fonts/Nunito-Regular.ttf
+      - family: Raleway-Regular
+        fonts:
+          - asset: lib/app/fonts/Raleway-Regular.ttf
+      - family: rimouski_sb
+        fonts:
+          - asset: lib/app/fonts/rimouski_sb.ttf    
+      - family: RockoFLF
+        fonts:
+          - asset: lib/app/fonts/RockoFLF.ttf
+      - family: Simply_Rounded
+        fonts:
+          - asset: lib/app/fonts/Simply_Rounded.ttf
+      - family: Ubuntu-Title # arabic normal
+        fonts:
+          - asset: lib/app/fonts/Ubuntu-Title.ttf
+      - family: VinylCuts # arabic normal
+        fonts:
+          - asset: lib/app/fonts/VinylCuts.ttf
+
+flutter_icons:
+#  image_path: "assets/images/icon-128x128.png"
+  image_path_android: "lib/app/assets/logo.png"
+  image_path_ios: "lib/app/assets/logo.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  #adaptive_icon_background: "assets/images/christmas-background.png" # only available for Android 8.0 devices and above
+  #adaptive_icon_foreground: "assets/images/icon-foreground-432x432.png" # only available for Android 8.0 devices and above
+## flutter cmd: flutter pub pub run flutter_launcher_icons:main
+
+analyzer:
+  strong-mode: true
+  language:
+    enableSuperMixins: true
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages

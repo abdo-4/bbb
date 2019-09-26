@@ -1,0 +1,16 @@
+﻿Login_Page.dart:
+
+
+
+
+
+1. load Splash screen
+2. _fetchSessionAndNavigate() async {
+    _handleConnection(String authToken){
+3. if get data and valid, from sharedRef. then (4) else (5).
+4. load home screen.
+5. load login page
+
+
+
+

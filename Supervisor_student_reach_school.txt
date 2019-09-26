@@ -1,0 +1,7 @@
+﻿I/flutter (16271): node['Supervisor_student_at_bus']:null
+I/flutter (16271): NNNNNNNN jsonStr: {"User_ID":"5c88005e779f5f3d909d4dfe","School_ID":"5c835bc90a00f634d84a3b25","School_Br_ID":null,"ScheduleTrip_ID":"5d86fe9e1d6f891ffc7abec7","WaypointList_ID":"5c88868a1a72511ff82f8e03","param":"Supervisor_student_reach_school","paramValue":"true"}
+I/flutter (16271): NNNNNNNN responseJson2 rating: {success: true, message: Attendance, ScheduleTrip Updating}
+I/flutter (16271): node['Supervisor_student_at_bus']:null
+I/flutter (16271): node['Supervisor_student_at_bus']:null
+I/flutter (16271): node['Supervisor_student_at_bus']:null
+I/flutter (16271): node['Supervisor_student_at_bus']:null
